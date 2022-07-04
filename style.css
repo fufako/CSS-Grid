@@ -28,7 +28,7 @@ html {
   background-color: #05386b;
   grid-column: 1 / 3;
   display: grid;
-  grid-template-columns: 3fr repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr;
   text-align: center;
   align-items: center;
 }
@@ -42,16 +42,42 @@ html {
 .header a:hover {
   color: #5cdb95;
 }
+.logo {
+  text-align: center;
+  padding-left: 15px;
+}
+.header-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+h3 {
+  margin: 0;
+  color: #05386b;
+}
 .sidebar {
   background-color: #379683;
   grid-row: 2/4;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  text-align: center;
+  place-items: center;
+}
+.sidebar div {
+  height: 100px;
+  width: 200px;
+  background-color: #edf5e1;
+  border-radius: 60px;
+}
+.sidebar div:hover {
+  background-color: whitesmoke;
 }
 
 .nav {
   background-color: #5cdb95;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px 0;
+  text-align: center;
 }
 .nav a {
   text-decoration: none;
