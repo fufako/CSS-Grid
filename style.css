@@ -58,8 +58,7 @@ h3 {
   background-color: #379683;
   grid-row: 2/4;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
   text-align: center;
   place-items: center;
   min-width: 250px;
@@ -68,6 +67,7 @@ h3 {
 .box {
   background-color: #edf5e1;
   border-radius: 60px;
+  height: 220px;
   width: 220px;
 }
 .box:hover {
