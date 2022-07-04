@@ -5,6 +5,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #edf5e1;
 }
 
 .container {
@@ -21,7 +22,6 @@ html {
 .container div {
   font-size: 32px;
   font-weight: bold;
-  color: white;
 }
 
 .header {
@@ -35,6 +35,13 @@ html {
 .header img {
   vertical-align: middle;
 }
+.header a {
+  text-decoration: none;
+  color: #edf5e1;
+}
+.header a:hover {
+  color: #5cdb95;
+}
 .sidebar {
   background-color: #379683;
   grid-row: 2/4;
@@ -42,6 +49,16 @@ html {
 
 .nav {
   background-color: #5cdb95;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #edf5e1;
+}
+.nav a:hover {
+  color: #05386b;
 }
 
 .article {
